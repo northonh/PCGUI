@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PCGUI</string>
+    <string name="programacao_concorrente">Programação concorrente</string>
+    <string name="acesso_direto">Acesso direto</string>
+    <string-array name="opcoes_menu">
+        <item>Acesso direto</item>
+        <item>Message e Handler</item>
+        <item>Runnable e Handler</item>
+        <item>Método da Activity</item>
+    </string-array>
+</resources>
