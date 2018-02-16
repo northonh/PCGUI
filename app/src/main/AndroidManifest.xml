@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AcessoDiretoActivity" />
-        <activity android:name=".MessageHandlerActivity"/>
+        <activity android:name=".MessageHandlerActivity" />
+        <activity android:name=".RunnableHandlerActivity"/>
     </application>
 
 </manifest>

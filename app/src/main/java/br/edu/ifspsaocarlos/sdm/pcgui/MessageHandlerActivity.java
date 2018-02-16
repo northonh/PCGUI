@@ -7,7 +7,6 @@ import android.widget.ImageView;
 
 public class MessageHandlerActivity extends ProgramacaoConcorrenteActivity {
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -15,7 +14,6 @@ public class MessageHandlerActivity extends ProgramacaoConcorrenteActivity {
         getSupportActionBar().setSubtitle(getString(R.string.message_handler));
     }
 
-    @Override
     protected void carregaImagens() {
         // Instancia um objeto Handler para tratar mensagens
         CarregaImagensHandler carregaImagensHandler = new CarregaImagensHandler();

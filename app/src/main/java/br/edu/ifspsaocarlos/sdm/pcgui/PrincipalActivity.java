@@ -15,10 +15,6 @@ public class PrincipalActivity extends AppCompatActivity implements AdapterView.
     // Array de Strings usado para preencher as opções da tela
     private String[] opcoesMenu;
 
-    /* Constante usada para passar o tipo de programação concorrente selecionado pelo usuário como
-       parâmetro para a próxima Activity */
-    public static final String TIPO_PC = "TIPO_PC";
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
@@ -45,6 +41,10 @@ public class PrincipalActivity extends AppCompatActivity implements AdapterView.
             case 1: // Message e Handler
                 Intent messageHandlerIntent = new Intent(this, MessageHandlerActivity.class);
                 startActivity(messageHandlerIntent);
+                break;
+            case 2: // Runnable e Handler
+                Intent runnableHandlerIntent = new Intent(this, RunnableHandlerActivity.class);
+                startActivity(runnableHandlerIntent);
                 break;
         }
     }
