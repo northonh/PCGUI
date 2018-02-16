@@ -2,6 +2,8 @@
     <string name="app_name">PCGUI</string>
     <string name="programacao_concorrente">Programação concorrente</string>
     <string name="acesso_direto">Acesso direto</string>
+    <string name="message_handler">Message e Handler</string>
+    <string name="escolha_thread">Escolha uma thread</string>
     <string-array name="opcoes_menu">
         <item>Acesso direto</item>
         <item>Message e Handler</item>

@@ -29,11 +29,11 @@ public class PrincipalActivity extends AppCompatActivity implements AdapterView.
         /* Recuperando referência para o ListView do layout da tela principal, configurando Adapter
         e Listener*/
         principalLV = findViewById(R.id.lv_principal);
-        principalLV.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, opcoesMenu));
+        principalLV.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, opcoesMenu));
         principalLV.setOnItemClickListener(this);
 
         // Colocando um subtítulo
-        getSupportActionBar().setSubtitle("Escolha uma thread");
+        getSupportActionBar().setSubtitle(getString(R.string.escolha_thread));
     }
 
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -41,6 +41,10 @@ public class PrincipalActivity extends AppCompatActivity implements AdapterView.
             case 0:  // Acesso direto
                 Intent acessoDiretoIntent = new Intent(this, AcessoDiretoActivity.class);
                 startActivity(acessoDiretoIntent);
+                break;
+            case 1: // Message e Handler
+                Intent messageHandlerIntent = new Intent(this, MessageHandlerActivity.class);
+                startActivity(messageHandlerIntent);
                 break;
         }
     }
