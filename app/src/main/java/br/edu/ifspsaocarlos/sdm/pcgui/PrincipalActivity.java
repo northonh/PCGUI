@@ -46,6 +46,10 @@ public class PrincipalActivity extends AppCompatActivity implements AdapterView.
                 Intent runnableHandlerIntent = new Intent(this, RunnableHandlerActivity.class);
                 startActivity(runnableHandlerIntent);
                 break;
+            case 3: // Runnable e Handler
+                Intent runOnUIThreadIntent = new Intent(this, RunOnUIThreadActivity.class);
+                startActivity(runOnUIThreadIntent);
+                break;
         }
     }
 }
